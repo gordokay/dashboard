@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 20vh 80vh;
+}
+
+header {
+    grid-column: 2;
+}
+
+.dashboard {
+    background-color: dodgerblue;
+    grid-row: 1 / span 2;
+}
+
+main {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.projects {
+    background-color: pink;
+    grid-row: span 2;
+}
+
+.announcements {
+    background-color: aquamarine;
+}
+
+.trending {
+    background-color: darkorchid;
+}
