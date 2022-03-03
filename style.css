@@ -1,40 +1,243 @@
+/* general */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: inherit;
 }
 
 body {
     display: grid;
-    grid-template-columns: 20vw 80vw;
+    grid-template-columns: 17vw 83vw;
     grid-template-rows: 20vh 80vh;
+    font-family: Poppins, sans-serif;
+    overflow: hidden
 }
+
+li {
+    list-style: none;
+}
+
+.user-icon {
+    display: inline-block;
+    width: 8%;
+    aspect-ratio: 1;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+button:hover, li:hover, .material-icons:hover, .material-icons-outlined:hover {
+    cursor: pointer;
+}
+
+/* header */
 
 header {
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(2, 50%);
+    align-items: center;
+    padding-inline: 35px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
+
+.search, .user-controls, .heading-nav ul {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-controls, .heading-nav ul {
+    justify-content: end;
+}
+
+.heading-nav button {
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 10px 20px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.user-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-heading div + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-heading p {
+    font-size: 0.8rem;
+}
+
+.user-heading h2 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+input {
+    width: 85%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #EEE;
+    height: 1.5rem;
+    font-weight: normal;
+    font-size: 0.8rem;
+    padding-inline: 15px;
+}
+
+/* dashboard */
 
 .dashboard {
     background-color: dodgerblue;
+    color: white;
     grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 30px;
 }
 
+.dashboard-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-heading .material-icons {
+    font-size: 2rem;
+}
+
+.dashboard h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dashboard nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dashboard li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* main */
+
 main {
-    background-color: gainsboro;
+    background-color: #EEE;
     display: grid;
     grid-template-columns: 67% 33%;
     grid-template-rows: repeat(2, 50%);
 }
 
+/* projects */
+
 .projects {
-    background-color: pink;
     grid-row: span 2;
+    padding: 15px;
+    /* overflow-y: scroll; */
 }
 
+h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    border-left: 5px solid gold;
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 25px;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-template-rows: 75% 25%;
+    row-gap: 10px;
+}
+
+.card-text{
+    grid-column: span 2;
+}
+
+.card-icons {
+    grid-column: 2;
+}
+
+.card h4 {
+    font-weight: bold;
+}
+
+/* announcements */
 .announcements {
-    background-color: aquamarine;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.announcement-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 15px;
+    border-radius: 0.25rem;
 }
 
+.announcement {
+    font-size: 0.8rem;
+}
+
+.announcement h4{
+    font-weight: bold;
+}
+
+/* trending */
 .trending {
-    background-color: darkorchid;
+    padding-right: 15px;
+}
+.trending h3 {
+    font-weight: bold;
+}
+.trending-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    border-radius: 0.25rem;
+    padding: 15px;
+    gap: 10px;
+}
+
+.account {
+    display: flex;
+    gap: 10px;
+}
+
+.account .user-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.user-tag {
+    font-weight: bold;
 }

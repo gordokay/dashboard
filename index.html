@@ -4,26 +4,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
 <body>
+
+    <!-- header -->
+
     <header>
-        
+        <div class="search">
+            <label for="search"><span class="material-icons-outlined">search</span></label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div class="user-controls">
+            <span class="material-icons-outlined">notifications_active</span>
+            <div class="user-icon"></div>
+            <span>Morgan Oakley</span>
+        </div>
+        <div class="user-heading">
+            <div class="user-icon"></div>
+            <div>
+                <p>Hi there,</p>
+                <h2>Morgan Oakley (@morgan)</h2>
+            </div>
+        </div>
+        <nav class="heading-nav">
+            <ul>
+                <li><button>New</button></li>
+                <li><button>Upload</button></li>
+                <li><button>Share</button></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- dashboard -->
+
     <nav class="dashboard">
-            
+            <div class="dashboard-heading">
+                <span class="material-icons">dashboard</span>
+                <h1>Dashboard</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><span class="material-icons">home</span>Home</li>
+                    <li><span class="material-icons-outlined">account_circle</span>Profile</li>
+                    <li><span class="material-icons">chat_bubble</span>Messages</li>
+                    <li><span class="material-icons">history</span>History</li>
+                    <li><span class="material-icons-outlined">task</span>Tasks</li>
+                    <li><span class="material-icons">groups</span>Community</li>
+                </ul>
+            </nav>
+            <nav class="info-nav">
+                <ul>
+                    <li><span class="material-icons">settings</span>Settings</li>
+                    <li><span class="material-icons">help</span>Support</li>
+                    <li><span class="material-icons-outlined">privacy_tip</span>Privacy</li>
+                </ul>
+            </nav>
     </nav>
+
+    <!-- main -->
+
     <main>
+
+        <!-- projects -->
+
         <section class="projects">
+            <h3>Your projects</h3>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Card title</h4>
+                        <p>Optio facilis quaerat quibusdam consequuntur aliquam ducimus aliquid quidem ab, cumque recusandae?</p>
+                    </div>
+                    <div class="card-icons">
+                        <span class="material-icons-outlined">star_border</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">share</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Card title</h4>
+                        <p>Facilis quaerat quibusdam consequuntur aliquam ducimus aliquid quidem ab, cumque recusandae?</p>
+                    </div>
+                    <div class="card-icons">
+                        <span class="material-icons-outlined">star_border</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">share</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Card title</h4>
+                        <p>Ducimus aliquid quidem ab, cumque recusandae?</p>
+                    </div>
+                    <div class="card-icons">
+                        <span class="material-icons-outlined">star_border</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">share</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Card title</h4>
+                        <p>Facilis quaerat quibusdam consequuntur aliquam ducimus aliquid quidem ab, cumque recusandae?</p>
+                    </div>
+                    <div class="card-icons">
+                        <span class="material-icons-outlined">star_border</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">share</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Card title</h4>
+                        <p>Voluptates necessitatibus optio facilis quaerat quibusdam consequuntur aliquam ducimus aliquid quidem ab, cumque recusandae?</p>
+                    </div>
+                    <div class="card-icons">
+                        <span class="material-icons-outlined">star_border</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">share</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Card title</h4>
+                        <p>Necessitatibus optio facilis quaerat quibusdam consequuntur aliquam ducimus aliquid quidem ab, cumque recusandae?</p>
+                    </div>
+                    <div class="card-icons">
+                        <span class="material-icons-outlined">star_border</span>
+                        <span class="material-icons-outlined">visibility</span>
+                        <span class="material-icons-outlined">share</span>
+                    </div>
+                </div>
+            </div>
             
         </section>
-        <aside class="annoucements">
 
-            
+        <!-- announcements -->
+
+        <aside class="announcements">
+            <h3>Announcements</h3>
+            <div class="announcement-container">
+                <div class="announcement">
+                    <h4>Announcement text</h4>
+                    <p>Necessitatibus optio facilis quaerat quibusdam consequuntur...</p>
+                </div>
+                <hr>
+                <div class="announcement">
+                    <h4>Announcement text</h4>
+                    <p>Necessitatibus optio facilis quaerat quibusdam consequuntur...</p>
+                </div>
+            </div>
         </aside>
+
+        <!-- trending -->
+
         <aside class="trending">
-            
+            <h3>Trending</h3>
+            <div class="trending-container">
+                <div class="account">
+                    <div class="user-icon"></div>
+                    <div class="user-name">
+                        <div class="user-tag">
+                            <p>@user</p>
+                        </div>
+                        <p>user nickname</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="user-icon"></div>
+                    <div class="user-name">
+                        <div class="user-tag">
+                            <p>@user</p>
+                        </div>
+                        <p>user nickname</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="user-icon"></div>
+                    <div class="user-name">
+                        <div class="user-tag">
+                            <p>@user</p>
+                        </div>
+                        <p>user nickname</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="user-icon"></div>
+                    <div class="user-name">
+                        <div class="user-tag">
+                            <p>@user</p>
+                        </div>
+                        <p>user nickname</p>
+                    </div>
+                </div>
+            </div>
         </aside>
     </main>
 </body>
